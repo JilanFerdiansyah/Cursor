@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cursor3</title>
+	<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <!-- Header -->
+    <section class="header container mx-auto my-5 content">
+      <div class="flex justify-between items-center"> 
+          <div class="text-4xl font-bold content ">Hudson Gavin Martin</div>
+          <div class="flex justify-end">
+            <div class="mr-5 text-xl font-bold text-gray-500">START-UP SESSIONS</div>
+            <div class="text-xl font-bold">MENU</div>
+          </div>
+      </div>  
+    </section>
+	<div class="content">
+    <h1>Cursor Follow on MouseMove</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam fugiat a asperiores nulla eveniet nihil excepturi laudantium exercitationem, earum ullam quo minus atque eos praesentium eum ad perferendis quis possimus dignissimos itaque porro. Consectetur dolorum quas ut magni laborum! Reiciendis quae, maxime, officia saepe placeat vero voluptas fugit ea quas sed nihil, similique repellat consequatur. Odit minima provident similique.
+    </p>
+  </div>
+  
+  <hr>
+
+  <div class="aba">
+  	<h4>jksdjksdjlksjdkljkl</h4>
+  </div>
+<div class="cursor"></div>
+  <script>
+    var cursor = document.querySelector(".cursor");    
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+</body>
+</html>

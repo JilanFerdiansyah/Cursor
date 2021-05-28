@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Home | hudson gavin martin</title>
+    <link rel="stylesheet" href="style4.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="header  border-8 border-black duration-70 sticky top-0">
+        <div class="flex justify-between items-center px-5 relative py-5 bg-white">
+            <div class="text-3xl font-bold hover">Hudson Gavin Martin</div>
+            <div class="flex justify-end ">
+                <div class="mr-5 text-xl font-bold text-gray-500 block hidden md:block hover" id="myDIV2">START-UP SESSIONS</div>
+                <div class="text-xl font-bold hover" onclick="myFunction()" id="myDIV4">MENU</div>
+                <div class="text-xl font-bold hover hidden" onclick="myFunction()" id="myDIV3">CLOSE</div>
+            </div>
+        </div>
+        <div class="nav hidden bg-white" id="myDIV">
+            <div class="px-5 flex justify-end pb-5 text-xl font-bold">
+                <div class="mr-7">
+                    <div>TEAM</div>
+                    <div>ABOUT</div>
+                </div>
+                <div class="mr-7">
+                    <div>INSIGHTS</div>
+                    <div>SERVICES</div>
+                </div>
+                <div class="">
+                    <div>CAREERS</div>
+                    <div>CONTACT</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero -->
+    <section class="hero">
+        <div class="grid grid-cols-12">
+            <div class="col-span-8  h-3/4 border-8 border-black border-t-0 flex flex-wrap content-end bg-gray-300">
+            	<video autoplay muted loop class="lg:p-0" class="object-fill hover">
+                    <source src="./asset/img/people.mp4" type="video/webm">
+                </video>
+                <!-- <div class="w-10/12 p-5">
+                    <h1 class="text-6xl lora font-black">We get it, business is changing fast</h1>
+                    <p class="text-xl pt-5">Our corporate, commercial advisory and dispute resolution services, help businesses of
+                        all sizes navigate the constantly changing world of business in the digital age.</p>
+                </div> -->
+            </div>
+            <div class="col-span-4 h-screen bg-red-500">
+            </div>
+        </div>
+    </section>
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <script>
+    var cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", function(e) {
+        cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        var x = document.getElementById("myDIV2");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        var x = document.getElementById("myDIV3");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        var x = document.getElementById("myDIV4");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+</body>
+
+</html>

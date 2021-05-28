@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+ 
+  font-family: "Open Sans",sans-serif;
+
+  cursor: none;
+}
+
+.content p{
+  width: 700px;
+  line-height: 26px;
+  font-size: 18px;
+  text-align: justify;
+
+}
+
+.cursor{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+  mix-blend-mode: difference;
+}
+
+
+.content:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  mix-blend-mode: difference;
+  border: 3px solid black;
+  
+}
+
+.aba:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  mix-blend-mode: difference;
+  border: 3px solid black;
+  
+}
+
+.content:hover ~ .cursor2{
+  opacity: 0;
+}

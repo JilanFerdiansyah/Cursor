@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+*{
+	cursor: none;
+	font-family: Roboto;
+}
+
+.content{
+ color: black;
+}
+.cursor{
+  position: fixed;
+  width: 23px;
+  height: 23px;
+  background: black;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+ }
+
+ .header {
+ 	transition: visibility 0s, opacity 0.5s linear;
+ }
+
+.hover:hover{
+  transform: scale(1.05)!important;
+  transition: .3s;
+  
+}
+
+.lora{
+	font-family: Lora;
+}
