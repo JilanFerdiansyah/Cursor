@@ -7,87 +7,228 @@
     <title>Home | hudson gavin martin</title>
     <link rel="stylesheet" href="style4.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header -->
-    <section class="header  border-8 border-black duration-70 sticky top-0">
-        <div class="flex justify-between items-center px-5 relative py-5 bg-white">
-            <div class="text-3xl font-bold hover">Hudson Gavin Martin</div>
+    <!-- Header Mobile-->
+    <section class="header ">
+        <div id="myDIV"
+            class="h-full bg-gray-900 mx-auto w-full hidden fixed transition duration-1000  font-bold text-white">
+            <div class="flex justify-end mt-8 mr-8">
+                <i class="fas fa-times text-3xl cursor-pointer" onclick="myFunction()"></i>
+            </div>
+            <div class="menu pt-10 px-10">
+                <div class="mb-14 text-4xl "><a href="# ">Work</a></div>
+                <div class="mb-14 text-4xl"><a href="# ">About</a></div>
+                <div class="mb-14 text-4xl"><a href="# ">Blog</a></div>
+                <div class="mb-14 text-4xl"><a href="# ">Contact</a></div>
+            </div>
+            <div class="social font-medium mt-10 text-2xl pt-18 px-10">
+                <h4 class="text-lg font-normal mb-8">Imprint</h4>
+                <a href="#"><i class="fab fa-github mr-8"></i></a>
+                <a href="#"><i class="fab fa-twitter mr-8"></i></a>
+                <a href="#"><i class="fab fa-instagram mr-8"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End Header Mobile-->
+    <!-- Hero -->
+    <section class=" h-screen bg-black">
+        <div class="navbar flex justify-between items-center  pt-16 pb-10 px-20  cream">
+            <div class="text-4xl font-bold hover montserrat">ROCK + POPPINS</div>
             <div class="flex justify-end ">
-                <div class="mr-5 text-xl font-bold text-gray-500 block hidden md:block hover" id="myDIV2">START-UP SESSIONS</div>
-                <div class="text-xl font-bold hover" onclick="myFunction()" id="myDIV4">MENU</div>
-                <div class="text-xl font-bold hover hidden" onclick="myFunction()" id="myDIV3">CLOSE</div>
+                <div class="mr-5 text-lg  font-light block hidden md:block hidden md:block" id="myDIV2">
+                    <a href="#" class="mr-5 hover:text-yellow-900">About</a>
+                    <a href="#" class="mr-5 hover:text-yellow-900">Projects</a>
+                    <a href="#" class="mr-5 hover:text-yellow-900">Services</a>
+                    <a href="#" class=" hover:text-yellow-900">Contact</a>
+                </div>
+                <div class="text-xl font-bold block md:hidden" onclick="myFunction()" id="myDIV4">
+                    <i class="fa fa-bars text-3xl" aria-hidden="true"></i>
+                </div>
+                <div class="text-xl font-bold hidden" onclick="myFunction()" id="myDIV3">CLOSE</div>
             </div>
         </div>
-        <div class="nav hidden bg-white" id="myDIV">
-            <div class="px-5 flex justify-end pb-5 text-xl font-bold">
-                <div class="mr-7">
-                    <div>TEAM</div>
-                    <div>ABOUT</div>
-                </div>
-                <div class="mr-7">
-                    <div>INSIGHTS</div>
-                    <div>SERVICES</div>
-                </div>
-                <div class="">
-                    <div>CAREERS</div>
-                    <div>CONTACT</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- hero -->
-    <section class="hero">
-        <div class="grid grid-cols-12">
-            <div class="col-span-8  h-3/4 border-8 border-black border-t-0 flex flex-wrap content-end bg-gray-300">
-            	<video autoplay muted loop class="lg:p-0" class="object-fill hover">
-                    <source src="./asset/img/people.mp4" type="video/webm">
-                </video>
-                <!-- <div class="w-10/12 p-5">
-                    <h1 class="text-6xl lora font-black">We get it, business is changing fast</h1>
-                    <p class="text-xl pt-5">Our corporate, commercial advisory and dispute resolution services, help businesses of
-                        all sizes navigate the constantly changing world of business in the digital age.</p>
-                </div> -->
-            </div>
-            <div class="col-span-4 h-screen bg-red-500">
-            </div>
-        </div>
-    </section>
-    <!-- cursor -->
-    <div class="cursor"></div>
-    <script>
-    var cursor = document.querySelector(".cursor");
-    document.addEventListener("mousemove", function(e) {
-        cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-    });
 
-    function myFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+        <div class=" hero h-5/6 flex bg-cover bg-opacity-50 backdrop-filter backdrop-grayscale">
+            <div class="hero-content m-auto lg:px-80 filter-none text-center">
+                <h1 class="mx-16 md:mx-24 lg:mx-0 text-4xl lg:text-5xl xl:text-6xl montserrat text-white  ">
+                    A multidisciplinary studio, specialising in interior, architectural and experiential design
+                </h1>
+                <a href="#isi" class="hidden md:block">
+                    <i class="fas fa-chevron-down text-3xl text-white  mt-8 animate-bounce " aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END HERO -->
+    <!-- Second -->
+    <section id="isi" class="cream  py-20 px-8 md:p-20 border-black border-b">
+        <div class="grid grid-cols-2 gap-16 " >
+            <div class="col-span-2 md:col-span-1 aos-item" data-aos="fade-up" data-id="1"  data-aos-duration="1000">
+                <a href="#"><img src="./asset/img/commercial.jpeg" alt=""
+                        class="h-72 lg:max-h-96 w-full object-cover"></a>
+                <a href="">
+                    <h1 class="montserrat mt-5 text-2xl font-medium font-italic">Commercial Work</h1>
+                </a>
+                <a href="">
+                    <p class="mt-3 font-light text-xl">Engaging and intelligent solution for retail & commercial
+                        Environments</p>
+                </a>
+            </div>
+            <div class="col-span-2 md:col-span-1 aos-item" data-aos="fade-up" data-id="2" data-aos-delay="400"  data-aos-duration="1000">
+                <a href=""><img src="./asset/img/residental.jpeg" alt=""
+                        class="h-72 lg:max-h-96 w-full object-cover"></a>
+                <a href="">
+                    <h1 class="montserrat mt-5 text-2xl font-medium font-italic">Residental Work</h1>
+                </a>
+                <a href="">
+                    <p class="mt-3 font-light text-xl">Stylish and functional, personalised spaces for living and
+                        working
+                        from home</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END SECON -->
+    <!-- THIRD -->
+    <section id="isi" class="cream  py-20 px-8 md:p-20 border-black border-b">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-16 ">
+            <div class="col-span-2 md:col-span-1" data-aos="fade-up" data-id="3"  data-aos-duration="1000">
+                <a href=""><img src="./asset/img/content1.jpg" alt=""
+                        class="h-72 lg:max-h-96 w-full object-cover"></a>
+                <div class=" flex justify-between"></a>
+                    <a href="">
+                        <p class="mt-3 font-light text-xl">Church Sneaker Lunch</p>
+                    </a>
+                    <a href=""><i class="fas fa-plus mt-5"></i></a>
+                </div>
+            </div>
+            <div class="col-span-2 md:col-span-1" data-aos="fade-up" data-id="4" data-aos-delay="400"  data-aos-duration="1000">
+                <a href=""><img src="./asset/img/contetn2.jpg" alt=""
+                        class="h-72 lg:max-h-96 w-full object-cover"></a>
+                <div class=" flex justify-between">
+                    <a href="">
+                        <p class="mt-3 font-light text-xl">Chatsworth Offices</p>
+                    </a>
+                    <a href=""><i class="fas fa-plus mt-5"></i></a>
+                </div>
+
+            </div>
+            <div class="col-span-2 md:col-span-1" data-aos="fade-up"  data-id="5" data-aos-delay="800"  data-aos-duration="1000">
+                <a href=""><img src="./asset/img/content3.jpg" alt=""
+                        class="h-72 lg:max-h-96 w-full object-cover"></a>
+                <div class=" flex justify-between">
+                    <a href="">
+                        <p class="mt-3 font-light text-xl">Telford Avenues</p>
+                    </a>
+                    <a href=""><i class="fas fa-plus mt-5"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END THIRD -->
+    <!-- FOURTH -->
+    <section class="md:flex">
+        <div class="bg-red-200 md:h-96 w-full md:w-1/2">
+            <img src="./asset/img/content4.jpg" alt="" class="w-full h-1/2 md:h-full object-cover">
+        </div>
+        <div class=" md:h-96 abu w-full md:w-1/2 montserrat px-20 py-24">
+            <p class="font-light italic text-2xl text-white mb-3">
+                The feel needed to be sophisticated and moody, unexpected and alluring. We explored deep shades of paint and played with dado heights to create an unusual mood. Materials were chosen to get better with age and tell stories.
+            </p>
+            <a href="#" class="font-thin text-gray-200">Atelier AR</a>
+            <a href="#" class="font-thin text-gray-200">Bandung</a>
+        </div>
+    </section>
+    <div class=" h-14 ijo">
+    </div>
+    <div class=" h-8 abu">
+    </div>
+    <!-- END FOURTH -->
+    <!-- FIFTH -->
+    <section class="fifth md:flex cream">
+        <div class="w-full md:w-1/2 px-20 py-24 border-black border-r-0 md:border-r-2">
+            <h1 class="text-3xl "">Trusted Experience</h1>
+            <p class="mt-5 font-light text-lg">For the past 20 years we have worked individually within industry-leading design consultancies and fashion houses, and also together as a partnership, designing and renovating homes in South London.</p>
+        </div>
+        <div class="w-full md:w-1/2 p-16 p-l-24 grid grid-cols-3 gap-5 flex items-center">
+            <div>
+                <img src="./asset/img/converse.svg" class="w-24">
+            </div>
+            <div class="flex items-center">
+                <img src="./asset/img/burbery.svg" class="w-24 ">
+            </div>
+            <div>
+                <img src="./asset/img/selfridges.svg" class="w-24">
+            </div>
+            <div>
+                <img src="./asset/img/allsaints.svg" class="w-24">
+            </div>
+            <div>
+                <img src="./asset/img/boxfresh.svg" class="w-24">
+            </div>
+            <div>
+                <img src="./asset/img/id.svg" class="w-14">
+            </div>
+            <div>
+                <img src="./asset/img/westfield.svg" class="w-24">
+            </div>
+            <div>
+                <img src="./asset/img/bensherman.svg" class="w-24">
+            </div>
+            <div>
+                <img src="./asset/img/whistles.svg" class="w-24">
+            </div>
+        </div>
+    </section>
+    <!-- END FIFTH -->
+    <!-- FOOTER -->
+    <section class="footer abu ">
+        <div class="navbar flex justify-between items-center  pb-16 pt-10 px-20  text-white">
+            <div class="text-4xl font-bold hover montserrat">ROCK + POPPINS</div>
+            <div class="flex justify-end ">
+                <div class="mr-5 text-lg  font-light">
+                    info@rockpoppins@fan.com <br>
+                    089766233111
+                </div>
+                <div class="mr-5 text-lg ">
+                    <p class="font-light">P SHerman, 42 Wallaby Way, Sydney</p>
+                    <a href="#" class="text-sm text-gray-400 mr-5">Google Maps</a>
+                    <a href="#" class="text-sm text-gray-400">City Mapper</a>
+                </div>
+            </div>
+            <div class="social font-medium 10 text-2xl">
+                <a href="#"><i class="fab fa-github mr-8"></i></a>
+                <a href="#"><i class="fab fa-twitter mr-8"></i></a>
+                <a href="#"><i class="fab fa-instagram mr-8"></i></a>
+            </div>
+    </section>
+    <!-- END FOOTER -->
+    <!-- cursor -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    
+    <script>
+        AOS.init();
+        var cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
-        var x = document.getElementById("myDIV2");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-        var x = document.getElementById("myDIV3");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-        var x = document.getElementById("myDIV4");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
     </script>
 </body>
 
